@@ -1,7 +1,8 @@
 // your code here
 const h3 = document.getElementById("url");
 const button = document.getElementById("button");
-button.addEventListener("click",() =>{
+button.addEventListener("click",(e) =>{
+	e.preventDefault();
     const name = document.getElementById("name").value;
     // console.log(name);
 	const year = document.getElementById("year").value;
